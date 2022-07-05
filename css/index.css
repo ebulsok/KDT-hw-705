@@ -1,0 +1,91 @@
+/* font */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+header .inner {
+    display: flex;
+    position: relative;
+    width: 80vw;
+    height: 72px;
+    margin: 0 auto;
+    padding: 0 24px;
+
+    color: #4A5056;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+/* logo */
+header .inner .header__logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 36px;
+    left: 24px;
+}
+
+header .inner .header__logo img {
+    display: block;
+}
+
+/* header_menu */
+header .inner .header__menu {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 36px;
+    left: 150px;
+}
+
+header .inner .header__menu > div {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin: 0 8px;
+    border-radius: 6px;
+}
+
+header .inner .header__menu > div:hover {
+    background-color: #fbf0ff;
+}
+
+header .inner .header__menu .header__menu__dropdown::after {
+    content: url("../images/more.png")
+}
+
+header .inner .header__menu .header__menu__dropdown:hover::after {
+    content: url("../images/less.png")
+}
+
+/* header_button */
+header .inner .header__btn {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 36px;
+    right: 24px;
+}
+
+header .inner .header__btn .header__btn__login {
+    margin-right: 8px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+header .inner .header__btn .header__btn__login:hover {
+    text-decoration: underline;
+}
+
+header .inner .header__btn .header__btn__inquiry {
+    background-color: #353A3F;
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+header .inner .header__btn .header__btn__inquiry:hover {
+    opacity: 0.8;
+}
