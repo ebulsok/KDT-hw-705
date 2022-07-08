@@ -94,7 +94,7 @@ header .inner .header__menu .item .item__name {
     border-radius: 6px;
 }
 
-header .inner .header__menu .item .item__name:hover > .more {
+header .inner .header__menu .item:hover .more {
     transform: rotate(180deg);
 }
 
